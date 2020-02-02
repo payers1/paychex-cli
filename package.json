@@ -1,0 +1,61 @@
+{
+  "name": "paychex-cli",
+  "version": "0.0.0",
+  "author": "Phill Ayers @payers1",
+  "bin": {
+    "pchx": "./bin/run"
+  },
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "@types/luxon": "^1.21.0",
+    "axios": "^0.19.2",
+    "conf": "^6.2.0",
+    "enquirer": "^2.3.4",
+    "luxon": "^1.22.0",
+    "puppeteer": "^2.1.0",
+    "tslib": "^1",
+    "user-agents": "^1.0.520"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/node": "^10",
+    "@types/puppeteer": "^2.0.0",
+    "@types/user-agents": "^1.0.0",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "globby": "^10",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/payers1/paychex-cli",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "pchx",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "payers1/paychex-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
