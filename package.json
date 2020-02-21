@@ -47,7 +47,10 @@
     "bin": "pchx",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "hooks": {
+      "init": "./lib/hooks/init"
+    }
   },
   "repository": "payers1/paychex-cli",
   "scripts": {
