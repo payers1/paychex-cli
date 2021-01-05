@@ -10,7 +10,7 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "@types/luxon": "^1.21.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "conf": "^6.2.0",
     "enquirer": "^2.3.4",
     "luxon": "^1.22.0",
