@@ -13,7 +13,7 @@
     "axios": "^0.19.2",
     "conf": "^6.2.0",
     "enquirer": "^2.3.4",
-    "luxon": "^1.22.0",
+    "luxon": "^1.28.1",
     "puppeteer": "^2.1.0",
     "tslib": "^1",
     "user-agents": "^1.0.520"
